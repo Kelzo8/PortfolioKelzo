@@ -131,6 +131,109 @@ body {
   -webkit-backdrop-filter: blur(5px);
 }
 
+/* Enhanced text visibility for Matrix mode */
+.matrix-mode .text-foreground {
+  color: #ffffff !important;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+.matrix-mode .text-foreground\/70 {
+  color: rgba(255, 255, 255, 0.9) !important;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+.matrix-mode .text-foreground\/60 {
+  color: rgba(255, 255, 255, 0.8) !important;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.15);
+}
+
+/* Enhanced heading visibility for Matrix mode */
+.matrix-mode h1,
+.matrix-mode h2,
+.matrix-mode h3,
+.matrix-mode h4,
+.matrix-mode h5,
+.matrix-mode h6 {
+  color: #ffffff !important;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.4), 0 0 20px rgba(0, 255, 127, 0.3) !important;
+}
+
+/* Enhanced gradient text visibility for Matrix mode */
+.matrix-mode .bg-gradient-to-r {
+  background: linear-gradient(to right, #ffffff, #00ff7f) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Quote text visibility in Matrix mode */
+.matrix-mode .quote-text {
+  color: #ffffff !important;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.4) !important;
+}
+
+/* Enhanced glass effects for Matrix mode */
+.matrix-mode .glass {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.matrix-mode .glass-strong {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Enhanced button visibility */
+.matrix-mode .btn-icon {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  color: #ffffff !important;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
+}
+
+.matrix-mode .btn-icon:hover {
+  background: rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 0 20px rgba(0, 255, 127, 0.4) !important;
+}
+
+/* Enhanced neon effects for Matrix mode */
+.matrix-mode .neon-btn {
+  background: rgba(0, 255, 127, 0.2) !important;
+  border-color: rgba(0, 255, 127, 0.5) !important;
+  color: #ffffff !important;
+  text-shadow: 0 0 8px rgba(0, 255, 127, 0.6);
+  box-shadow: 0 0 20px rgba(0, 255, 127, 0.3) !important;
+}
+
+.matrix-mode .neon-btn:hover {
+  box-shadow: 0 0 30px rgba(0, 255, 127, 0.6) !important;
+  background: rgba(0, 255, 127, 0.3) !important;
+}
+
+/* Enhanced image visibility */
+.matrix-mode img {
+  filter: brightness(1.1) contrast(1.1);
+}
+
+/* Enhanced form elements */
+.matrix-mode input,
+.matrix-mode textarea {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  color: #ffffff !important;
+}
+
+.matrix-mode input:focus,
+.matrix-mode textarea:focus {
+  border-color: rgba(0, 255, 127, 0.6) !important;
+  box-shadow: 0 0 15px rgba(0, 255, 127, 0.3) !important;
+}
+
 /* Responsive text gradients */
 .text-gradient {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);

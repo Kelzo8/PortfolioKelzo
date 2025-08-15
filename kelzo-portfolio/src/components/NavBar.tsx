@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { Github, Linkedin } from "lucide-react";
 import { MatrixToggle } from "./MatrixToggle";
-import { ThemeToggle } from "./ui/theme-toggle";
 import { socialLinks } from "@/lib/portfolioData";
 
 const links = [
@@ -29,7 +28,6 @@ export function NavBar({ matrixMode, onMatrixToggle }: { matrixMode: boolean; on
         <div className="flex items-center gap-3">
           <a href={socialLinks.github} target="_blank" rel="noreferrer" aria-label="GitHub" className="btn-icon"><Github className="icon" /></a>
           <a href={socialLinks.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="btn-icon"><Linkedin className="icon" /></a>
-          <ThemeToggle />
           <MatrixToggle onChange={onMatrixToggle} />
         </div>
       </div>

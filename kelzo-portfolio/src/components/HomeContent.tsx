@@ -17,7 +17,7 @@ export function HomeContent() {
   const [matrix, setMatrix] = useState(false);
   const onChange = useCallback((v: boolean) => setMatrix(v), []);
   return (
-    <div className="font-sans">
+    <div className={`font-sans ${matrix ? 'matrix-mode' : ''}`}>
       <ParticleNetwork />
       <MatrixRain enabled={matrix} />
       <NavBar matrixMode={matrix} onMatrixToggle={onChange} />

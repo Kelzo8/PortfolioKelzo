@@ -84,29 +84,13 @@ export function Hero() {
           transition={{ duration: 1, ease: "easeOut" }}
           className="relative z-10"
         >
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="inline-block mb-6"
-          >
-            <div className="relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-sky-500 to-purple-500 rounded-full blur opacity-25"></div>
-              <div className="relative bg-gradient-to-r from-sky-500 to-purple-500 rounded-full p-1">
-                <div className="bg-background rounded-full px-6 py-2">
-                  <span className="text-sm font-medium bg-gradient-to-r from-sky-500 to-purple-500 bg-clip-text text-transparent">
-                    Available for opportunities
-                  </span>
-                </div>
-              </div>
-            </div>
-          </motion.div>
+
 
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tight font-[var(--font-heading)] bg-gradient-to-r from-white via-sky-100 to-purple-100 bg-clip-text text-transparent"
+            className="text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tight font-[var(--font-heading)] text-black dark:text-white"
           >
             Hi, I'm James Kelly
           </motion.h1>
@@ -135,33 +119,7 @@ export function Hero() {
             Building intelligent and impactful software solutions with cutting-edge technology.
           </motion.p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.9 }}
-            className="mt-10 flex flex-wrap gap-4 justify-center"
-          >
-            <motion.a 
-              href="#projects" 
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              className="group relative inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-purple-500 text-white px-8 py-3 rounded-full font-medium shadow-lg shadow-sky-500/25 hover:shadow-xl hover:shadow-sky-500/40 transition-all duration-300"
-            >
-              <Eye className="w-4 h-4 group-hover:scale-110 transition-transform" />
-              View My Work
-            </motion.a>
-            
-            <motion.a 
-              href="/James_Kelly_CV.pdf" 
-              download
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              className="group relative inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-3 rounded-full font-medium hover:bg-white/20 hover:border-white/30 transition-all duration-300"
-            >
-              <Download className="w-4 h-4 group-hover:scale-110 transition-transform" />
-              Download CV
-            </motion.a>
-          </motion.div>
+
 
           <motion.div
             initial={{ opacity: 0 }}

@@ -12,8 +12,8 @@ export function QuoteOfDay() {
   useEffect(() => { setIdx(Math.floor(Math.random() * motivationalQuotes.length)); }, []);
   const q = motivationalQuotes[idx];
   return (
-    <div className="mt-8 text-sm text-foreground/80 italic">
-      “{q.text}” — {q.author}
+    <div className="mt-8 text-sm text-foreground/80 italic quote-text">
+      "{q.text}" — {q.author}
       <button className="btn-icon ml-2" onClick={() => setIdx(Math.floor(Math.random() * motivationalQuotes.length))}>Generate New Quote</button>
     </div>
   );
