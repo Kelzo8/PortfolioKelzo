@@ -88,7 +88,7 @@ export function Contact() {
                 <div className="p-3 rounded-full bg-gradient-to-r from-sky-500 to-purple-500">
                   <MessageCircle className="w-6 h-6 text-white" />
                 </div>
-                <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Let's work together</h2>
+                <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Let&apos;s work together</h2>
               </motion.div>
               
               <motion.p 
@@ -96,7 +96,7 @@ export function Contact() {
                 className="text-lg text-foreground/70 mb-8 leading-relaxed"
               >
                 Open to internships, freelance opportunities, and exciting collaborations. 
-                Let's build something amazing together!
+                Let&apos;s build something amazing together!
               </motion.p>
               
               <motion.div 

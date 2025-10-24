@@ -13,7 +13,7 @@ export function QuoteOfDay() {
   const q = motivationalQuotes[idx];
   return (
     <div className="mt-8 text-sm text-foreground/80 italic quote-text">
-      "{q.text}" — {q.author}
+      &ldquo;{q.text}&rdquo; — {q.author}
       <button className="btn-icon ml-2" onClick={() => setIdx(Math.floor(Math.random() * motivationalQuotes.length))}>Generate New Quote</button>
     </div>
   );

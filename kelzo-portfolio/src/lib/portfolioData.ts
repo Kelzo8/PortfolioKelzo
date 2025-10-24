@@ -54,12 +54,66 @@ export const projects: Project[] = [
     imageUrl: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&auto=format&fit=crop&q=60',
     githubUrl: 'https://github.com/Kelzo8/webcam',
     liveUrl: 'https://cooliverse-creation-hub.lovable.app/',
+  },
+  {
+    id: '7',
+    title: 'Operations Manual Generator',
+    description: 'Built during placement with Flask, HTML, Bootstrap, and PostgreSQL to streamline regulatory compliance, saving internal team time and money before customer rollout.',
+    technologies: ['Flask', 'HTML', 'Bootstrap', 'PostgreSQL'],
+    imageUrl: 'https://images.unsplash.com/photo-1588702547919-26089e690ecc?w=800&auto=format&fit=crop&q=60',
+    githubUrl: '#',
+    liveUrl: '#',
+  },
+  {
+    id: '8',
+    title: 'Motion Sensor Detector for Caretakers',
+    description: 'Arduino-based device with 3D-printed enclosure sending Telegram alerts to caretakers—useful for dementia or Alzheimer’s safety scenarios.',
+    technologies: ['Arduino', '3D Printing', 'Telegram API', 'IoT'],
+    imageUrl: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&auto=format&fit=crop&q=60',
+    githubUrl: '#',
+    liveUrl: '#',
+  },
+  {
+    id: '9',
+    title: 'Pygame Race Car Simulator',
+    description: 'Game built with Pygame applying design patterns including Observer and Factory Method for clean architecture.',
+    technologies: ['Python', 'Pygame', 'Design Patterns'],
+    imageUrl: '/globe.svg',
+    githubUrl: '#',
+    liveUrl: '#',
+  },
+  {
+    id: '10',
+    title: 'Secure File Sharing Application',
+    description: 'Multi-device file sharing with Python and C++ integrating cryptographic standards like 3XDH and robust encryption; included ethical hacking to validate security and stability.',
+    technologies: ['Python', 'C++', '3XDH', 'Cryptography'],
+    imageUrl: 'https://images.unsplash.com/photo-1556157382-97eda2d62296?w=800&auto=format&fit=crop&q=60',
+    githubUrl: '#',
+    liveUrl: '#',
+  },
+  {
+    id: '11',
+    title: 'Ticket App (Web3)',
+    description: 'Blockchain-based app for buying, selling, and exchanging tickets using Web3 technologies.',
+    technologies: ['Blockchain', 'Web3', 'Smart Contracts'],
+    imageUrl: 'https://images.unsplash.com/photo-1516245834210-c4c142787335?w=800&auto=format&fit=crop&q=60',
+    githubUrl: '#',
+    liveUrl: '#',
+  },
+  {
+    id: '12',
+    title: 'Sleep Quality Prediction',
+    description: 'Analysis using Kaggle dataset to provide personalized advice based on lifestyle factors like activity, work-life balance, stress, and diet.',
+    technologies: ['Python', 'Pandas', 'Machine Learning'],
+    imageUrl: '/IMG_2200.jpeg',
+    githubUrl: '#',
+    liveUrl: '#',
   }
 ];
 
 export const socialLinks: SocialLinks = {
   github: 'https://github.com/Kelzo8',
-  linkedin: 'https://ie.linkedin.com/in/jameskellyise',
+  linkedin: 'https://www.linkedin.com/in/jameskellyise/',
   email: 'james.kelly991@yahoo.com'
 };
 
@@ -90,7 +144,7 @@ export const certificates: Certificate[] = [
   {
     title: "President's Volunteer Award",
     organization: "University of Limerick",
-    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&auto=format&fit=crop&q=60",
+    image: "/window.svg",
     description: "Awarded for exceptional community service and volunteer work"
   },
   {

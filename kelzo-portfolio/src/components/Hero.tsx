@@ -92,7 +92,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tight font-[var(--font-heading)] text-black dark:text-white"
           >
-            Hi, I'm James Kelly
+            Hi, I&apos;m James Kelly
           </motion.h1>
           
           <motion.div
@@ -102,7 +102,7 @@ export function Hero() {
             className="mt-6"
           >
             <p className="text-xl sm:text-2xl lg:text-3xl text-foreground/85 font-medium">
-              I'm a{" "}
+              I&apos;m a{" "}
               <span className="inline-block min-w-[200px] text-sky-400 font-bold">
                 {typed}
               </span>

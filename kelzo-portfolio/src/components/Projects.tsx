@@ -37,6 +37,9 @@ const itemVariants = {
 export function Projects() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState<Project | null>(null);
+  const [showAll, setShowAll] = useState(true);
+
+  const visibleProjects = showAll ? projects : projects.slice(0, 6);
 
   return (
     <Section id="projects" className="py-24">
@@ -46,10 +49,11 @@ export function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-3xl sm:text-4xl font-bold tracking-tight text-center mb-4"
+          className="text-3xl sm:text-4xl font-bold tracking-tight text-center mb-2"
         >
           Featured Projects
         </motion.h2>
+        <p className="text-center text-xs text-foreground/50 mb-10">{projects.length} projects</p>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -64,10 +68,12 @@ export function Projects() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: false, amount: 0.2 }}
           className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8"
+          id="projects-grid"
+          key={`projects-grid-${showAll ? 'all' : 'less'}`}
         >
-          {projects.map((project, index) => (
+          {visibleProjects.map((project, index) => (
             <motion.div
               key={project.id}
               variants={itemVariants}
@@ -134,6 +140,17 @@ export function Projects() {
             </motion.div>
           ))}
         </motion.div>
+
+        <div className="mt-10 flex justify-center">
+          <button
+            onClick={() => setShowAll((s) => !s)}
+            className="neon-btn rounded-full px-6 py-3 text-sm"
+            aria-expanded={showAll}
+            aria-controls="projects-grid"
+          >
+            {showAll ? 'Show Less' : 'Show More Projects'}
+          </button>
+        </div>
       </div>
       <ProjectModal project={active} open={open} onClose={() => setOpen(false)} />
     </Section>

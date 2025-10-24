@@ -3,6 +3,7 @@
 import { Section } from "./Section";
 import { SkillsDisplay } from "./SkillsDisplay";
 import { ImageCarousel } from "./ImageCarousel";
+import { Placements } from "./Placements";
 import { motion } from "framer-motion";
 
 export function About() {
@@ -20,7 +21,7 @@ export function About() {
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">About Me</h2>
           <p className="text-foreground/70 max-w-3xl mx-auto text-lg leading-relaxed">
-            James Kelly, a second-year Immersive Software Engineering student at the University of Limerick, 
+            James Kelly, a third-year Immersive Software Engineering student at the University of Limerick, 
             currently on placement with Avtrain. Experienced in Python, Java, Django, C++, AWS, and Docker. 
             Passionate about AI, web development, and sports (GAA & fitness).
           </p>
@@ -56,6 +57,17 @@ export function About() {
             <SkillsDisplay />
           </motion.div>
         </div>
+
+        {/* Placements Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="mt-24"
+        >
+          <Placements />
+        </motion.div>
       </motion.div>
     </Section>
   );
