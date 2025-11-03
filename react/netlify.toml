@@ -1,0 +1,10 @@
+# Netlify configuration for React portfolio
+[build]
+  publish = "."
+  command = "echo 'No build needed - static React app'"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
