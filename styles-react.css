@@ -1,0 +1,217 @@
+/* React-Specific Styles for Enhanced Features */
+
+/* Typing Animation */
+.cursor-blink {
+  display: inline-block;
+  animation: blink 1s infinite;
+  margin-left: 2px;
+  color: var(--teal-500);
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+
+/* Dark Mode Theme (Feature #11) */
+[data-theme="dark"] {
+  --white: #1a1a2e;
+  --navy-900: #e4e4e8;
+  --navy-800: #d1d5db;
+  --navy-700: #9ca3af;
+  --text: #f3f4f6;
+  --muted: #2d2d44;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] body {
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+}
+
+[data-theme="dark"] .site-header {
+  background: rgba(26, 26, 46, 0.9);
+  border-bottom: 1px solid rgba(23, 184, 193, 0.2);
+}
+
+[data-theme="dark"] .section-alt {
+  background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+}
+
+[data-theme="dark"] .card,
+[data-theme="dark"] .achievement,
+[data-theme="dark"] .xp-card {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(26, 26, 46, 0.9) 100%);
+  border-color: rgba(23, 184, 193, 0.2);
+}
+
+[data-theme="dark"] .nav-link {
+  color: var(--navy-800);
+}
+
+[data-theme="dark"] .contact-link,
+[data-theme="dark"] .btn-ghost {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(26, 26, 46, 0.9) 100%);
+  border-color: rgba(23, 184, 193, 0.3);
+  color: var(--navy-800);
+}
+
+[data-theme="dark"] .link {
+  color: var(--navy-800);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 2px solid rgba(23, 184, 193, 0.2);
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--navy-800);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 18px;
+  margin-left: 12px;
+}
+
+.theme-toggle:hover {
+  background: var(--gradient-2);
+  color: white;
+  border-color: transparent;
+  transform: translateY(-2px) rotate(15deg);
+  box-shadow: 0 6px 20px rgba(23, 184, 193, 0.3);
+}
+
+[data-theme="dark"] .theme-toggle {
+  background: rgba(30, 41, 59, 0.9);
+  border-color: rgba(23, 184, 193, 0.3);
+  color: var(--navy-800);
+}
+
+/* Custom Logo (Feature #31) */
+.custom-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(23, 184, 193, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.custom-logo:hover {
+  transform: translateY(-2px) scale(1.05) rotate(5deg);
+  box-shadow: 0 6px 20px rgba(23, 184, 193, 0.4);
+}
+
+.custom-logo svg {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.custom-logo:hover svg {
+  transform: scale(1.1);
+}
+
+/* 3D Card Effects (Feature #28) */
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease-out;
+}
+
+.card-3d .card {
+  transform-style: preserve-3d;
+}
+
+.card-3d:hover {
+  transition: transform 0.3s ease-out;
+}
+
+/* Particle Background is handled via canvas in JS */
+
+/* Interactive Resume Download Button (Feature #42) */
+.btn-resume {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #17b8c1 0%, #0f2540 100%);
+  color: var(--white);
+  border: none;
+  min-width: 180px;
+}
+
+.btn-resume .btn-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  z-index: 2;
+}
+
+.btn-resume .btn-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.5);
+  width: 0%;
+  transition: width 1.5s ease;
+  z-index: 1;
+}
+
+.btn-resume.downloading .btn-progress {
+  width: 100%;
+}
+
+.btn-resume:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.btn-resume:hover:not(:disabled) {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(23, 184, 193, 0.35);
+}
+
+.btn-resume:active:not(:disabled) {
+  transform: translateY(-1px) scale(0.98);
+}
+
+/* Update CTA layout for multiple buttons */
+.cta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 680px) {
+  .theme-toggle {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+
+  .btn-resume {
+    min-width: 100%;
+    margin-top: 8px;
+  }
+
+  .cta {
+    flex-direction: column;
+  }
+
+  .cta .btn,
+  .cta .btn-resume {
+    width: 100%;
+  }
+}
+
