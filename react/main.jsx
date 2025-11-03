@@ -200,7 +200,7 @@ function ResumeDownload() {
     
     // Link to actual resume PDF
     const link = document.createElement('a');
-    link.href = './assets/resume.pdf';
+    link.href = '/react/assets/resume.pdf';
     link.download = 'James_Kelly_Resume.pdf';
     link.click();
     
