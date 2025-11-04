@@ -238,43 +238,37 @@ const projectsData = [
     title: 'Dengue Virus Prediction',
     desc: 'Predicting dengue cases using advanced machine learning, Python and scikit-learn, with robust visualisation tools.',
     chips: ['Python', 'scikit-learn', 'ML', 'Visualisation'],
-    code: 'https://github.com/NiallSom/DengueCasePrediction',
-    live: 'https://cooliverse-creation-hub.lovable.app/'
+    code: 'https://github.com/NiallSom/DengueCasePrediction'
   },
   {
     title: 'API Weather App',
     desc: 'Real-time weather data and forecasts via public APIs, built with Python, Flask, and React.',
     chips: ['Python', 'Flask', 'React', 'APIs'],
-    code: 'https://github.com/Kelzo8/DataWebApp',
-    live: 'https://cooliverse-creation-hub.lovable.app/'
+    code: 'https://github.com/Kelzo8/DataWebApp'
   },
   {
     title: 'Customer Portal AI',
     desc: 'AI-backed customer management portal, using Python, TypeScript, React.',
     chips: ['Python', 'TypeScript', 'React', 'AI'],
-    code: 'https://github.com/Kelzo8/CustomerPortalAI',
-    live: 'https://cooliverse-creation-hub.lovable.app/'
+    code: 'https://github.com/Kelzo8/CustomerPortalAI'
   },
   {
     title: 'Club Management System',
     desc: 'Modern web platform for club activities and events with Python, Docker, Flask, PostgreSQL.',
     chips: ['Python', 'Docker', 'Flask', 'PostgreSQL'],
-    code: 'https://github.com/NiallSom/flaskClubManagement',
-    live: 'https://cooliverse-creation-hub.lovable.app/'
+    code: 'https://github.com/NiallSom/flaskClubManagement'
   },
   {
     title: 'AI Chatbot',
     desc: 'Next-gen customer support chatbot with NLP and machine learning.',
     chips: ['Python', 'NLP', 'ML'],
-    code: 'https://github.com/Kelzo8/AI-Chatbot',
-    live: 'https://cooliverse-creation-hub.lovable.app/'
+    code: 'https://github.com/Kelzo8/AI-Chatbot'
   },
   {
     title: 'Webcam Motion Detection',
     desc: 'Real-time motion detection using Python and OpenCV.',
     chips: ['Python', 'OpenCV'],
-    code: 'https://github.com/Kelzo8/webcam',
-    live: 'https://cooliverse-creation-hub.lovable.app/'
+    code: 'https://github.com/Kelzo8/webcam'
   },
   {
     title: 'Operations Manual Generator',
@@ -294,17 +288,20 @@ const projectsData = [
   {
     title: 'Secure File Sharing',
     desc: 'Multi-device secure file sharing app using Python, C++, and cryptography.',
-    chips: ['Python', 'C++', 'Crypto']
+    chips: ['Python', 'C++', 'Crypto'],
+    code: 'https://github.com/GobblerGang/PyClient'
   },
   {
     title: 'Ticket App (Web3)',
     desc: 'Blockchain-powered ticketing platform leveraging Web3 and smart contracts.',
-    chips: ['Web3', 'Smart Contracts']
+    chips: ['Web3', 'Smart Contracts'],
+    code: 'https://github.com/Kelzo8/BlockChain'
   },
   {
     title: 'Sleep Quality Prediction',
     desc: 'AI-powered analysis of sleep data for personalized lifestyle recommendations.',
-    chips: ['AI', 'ML']
+    chips: ['AI', 'ML'],
+    code: 'https://github.com/ISE-CS4445-AI/SleeperBuilds'
   }
 ];
 
