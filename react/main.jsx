@@ -299,7 +299,7 @@ const projectsData = [
   },
   {
     title: 'Sleep Quality Prediction',
-    desc: 'AI-powered analysis of sleep data for personalized lifestyle recommendations.',
+    desc: 'AI-powered analysis of sleep data for personalised lifestyle recommendations.',
     chips: ['AI', 'ML'],
     code: 'https://github.com/ISE-CS4445-AI/SleeperBuilds'
   }
