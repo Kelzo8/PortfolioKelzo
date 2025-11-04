@@ -236,8 +236,8 @@ function ResumeDownload() {
 const projectsData = [
   {
     title: 'Dengue Virus Prediction',
-    desc: 'Predicting dengue cases using advanced machine learning, Python and scikit-learn, with robust visualization tools.',
-    chips: ['Python', 'scikit-learn', 'ML', 'Visualization'],
+    desc: 'Predicting dengue cases using advanced machine learning, Python and scikit-learn, with robust visualisation tools.',
+    chips: ['Python', 'scikit-learn', 'ML', 'Visualisation'],
     code: 'https://github.com/NiallSom/DengueCasePrediction',
     live: 'https://cooliverse-creation-hub.lovable.app/'
   },
